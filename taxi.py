@@ -57,10 +57,10 @@ def cargarArchivo(archivos_usuario):
                     try:
                         descomponer_monto = viajes[2].split('.')
                         if len(descomponer_monto[1]) != 2:
-                            print("El precio no contiene 2 decimales, Por favor cargar otro archivo \n")
+                            print(f"El precio {viajes[2]} no contiene 2 decimales, Por favor cargar otro archivo \n")
                             validar = True # continuo pidiendo un archivo
                     except IndexError:
-                        print("El precio no contiene 2 decimales, Por favor cargar otro archivo \n")
+                        print(f"El precio {viajes[2]} no contiene 2 decimales, Por favor cargar otro archivo \n")
                         validar = True # continuo pidiendo un archivo
                     
 
